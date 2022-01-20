@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiSuggestion"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:weightSum="1"
+    android:id="@+id/ll"
+    >
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight=".5"
+         android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+        android:text="Normal" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight=".5"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+
+        android:text="under weight" />
+
+</LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:weightSum="1"
+      android:id="@+id/ll2"
+      android:layout_below="@+id/ll">
+      <Button
+          android:id="@+id/button3"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_weight=".5"
+          android:background="@android:color/holo_orange_light"
+          android:textColor="@android:color/white"
+          android:text="over weight" />
+      <Button
+          android:id="@+id/button4"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_weight=".5"
+          android:background="@android:color/holo_orange_light"
+          android:textColor="@android:color/white"
+          android:text="obese" />
+  </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvshow"
+        android:padding="10dp"
+        android:layout_marginTop="9dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/ll2"
+
+        >
+
+    </TextView>
+</RelativeLayout>
